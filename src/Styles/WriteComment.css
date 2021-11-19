@@ -1,9 +1,9 @@
 .form-container {
-    height:100vh;
     background-color: #E6E4DD;
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding: 10px;
 
 }
 
