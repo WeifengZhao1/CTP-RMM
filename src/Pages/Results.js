@@ -20,6 +20,7 @@ function Container() {
 
       <Heading />
 
+      
       <div class="container ml-5 my-5">
 
         {/* 
@@ -53,6 +54,7 @@ function Container() {
           />  
 
         </div>
+
       </div>
     </div>
 
@@ -100,6 +102,7 @@ const Condition = () => {
       */
       
       <div>
+
 
         <div class="form-check">
        {/*    INPUT MISSING 'checked' at the end*/}

@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import {Route,Router,Link} from 'react-router-dom';
 import { Container, Navbar } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css'
 import WriteComment from '../Pages/WriteComment';
 import '../Styles/SearchBar.css';
 
@@ -25,7 +26,9 @@ export default class SearchBar extends Component {
                 <div>
                     <p>Did not find your school? Create the first comment now!</p>
                     <Button WriteReview="outline-success"><Link to='WriteComment'className="link">Write a Review</Link></Button>
-                </div>
+                </div>                
+
+
             </div>
             
         )
