@@ -1,4 +1,7 @@
 .header-top_logo1{
+    text-decoration: none;
+}
+.header-top_logo1{
     font-weight: lighter;
     font-size: 60px;
     color: #5ce1e6;
@@ -6,6 +9,7 @@
 
 .header-top_logo2{
     font-weight: bold;
+    color: black;
     
 }
 

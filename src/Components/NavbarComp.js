@@ -38,8 +38,10 @@ export default class NavbarComp extends Component {
             <div class="row">
               {/* First col */}
               <div class="col">
-                <h1 class="display-7" className="header-top_logo1" >Rate MY</h1>
-                <h1 class="display-6" className="header-top_logo2">Major</h1>
+                <a href="/"  className="header-top_logo">
+                    <h1 class="display-7" className="header-top_logo1" >Rate MY</h1>
+                    <h1 class="display-6" className="header-top_logo2">Major</h1>
+                </a>
               </div>
               {/*  Second col */}
               <div class="col col-lg-2">
