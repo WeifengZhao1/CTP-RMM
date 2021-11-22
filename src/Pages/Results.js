@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import '../Styles/Results.css';
 
 
 /* Container */
@@ -35,6 +36,7 @@ function Container() {
         {/* Right  -- School result */}
         <div class="col-sm ml-5 ">
           <h3 class="font-weight-bold mb-3">Search Result</h3>
+
           <School 
             SchoolName={SchoolResult1.SchoolName} 
             Rate={SchoolResult1.Rate} 
@@ -138,7 +140,7 @@ const School = ({ SchoolName, Rate, Review, Count }) => {
   return (
     /* School Result */
     <div class="card mb-3">
-      <div class="card-body">
+      <div class="card-body" >
           <div class="mx-3">
             <h5>{SchoolName}</h5>
             <div class="mt-1"><strong>{Rate}</strong></div>

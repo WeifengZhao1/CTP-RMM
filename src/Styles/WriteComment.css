@@ -1,11 +1,14 @@
 .form-container {
-    background-color: #E6E4DD;
+    /* background-color: #E6E4DD; */
     display: flex;
     justify-content: center;
     align-items: center; 
     padding: 10px;
+    margin-bottom: 50px;
 
 }
+
+
 
 .form-section {
     width: 500px;
@@ -21,7 +24,8 @@
 
 .form-section h1 {
     text-align: center;
-    background-color:#3F3F6E;
+    /* background-color:#3F3F6E; */
+    background-color: #5ce1e6;
     color:white;
     border-radius: 10px;
     padding:5px;
@@ -80,7 +84,7 @@
     font-weight: 500;
     border: none;
     width: 150px;
-    background-color:#3F3F6E;
+    background-color:#5ce1e6;
     color:white;
     border-radius: 10px;
 }

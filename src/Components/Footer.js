@@ -128,13 +128,13 @@ function Footer() {
               <h4>Team Null</h4>
               <ul className = "list-unstyled">
                 <li>
-                  <a href="#">Weifeng Zhao</a>
+                  <a href="https://www.linkedin.com/in/weifeng-zhao/" className="name">Weifeng Zhao</a>
                 </li>
                 <li>
-                  <a href="#">Linxin Jiang</a>
+                  <a href="https://www.linkedin.com/in/linxinjiang/" className="name">Linxin Jiang</a>
                 </li>
                 <li>
-                  <a href="#">Brandon Torres</a>
+                  <a href="https://www.linkedin.com/in/torres-brandon/" className="name">Brandon Torres</a>
                 </li>
               </ul>
             </div>
@@ -171,7 +171,7 @@ function Footer() {
           </div>
 
           <div className="row">
-            <p className="col-sm">
+            <p className="col-sm" className="copyRight">
               &copy;{new Date().getFullYear()} TEAM NULL | All right reserved | Terms Of Serivce | Privacy
             </p>
           </div>

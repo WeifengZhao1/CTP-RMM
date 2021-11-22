@@ -1,15 +1,20 @@
-.header-top_logo1{
+body{
+    background-color: #00c2cb;
+}
+
+.header-top_logo{
     text-decoration: none;
 }
 .header-top_logo1{
     font-weight: lighter;
-    font-size: 60px;
-    color: #5ce1e6;
+    font-size: 70px;
+    color: white;
 }
 
 .header-top_logo2{
     font-weight: bold;
     color: black;
+    font-size: 55px;
     
 }
 
@@ -38,11 +43,10 @@ margin-top: 6px;
 }
 
 .header-bottom_slogan{
-    color: #5ce1e6; 
+    color: whitesmoke; 
    /*  color: #00c2cb; */
    /*  color: black; */
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
 }
-
