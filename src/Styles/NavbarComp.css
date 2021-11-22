@@ -1,0 +1,52 @@
+body{
+    background-color: #00c2cb;
+}
+
+.header-top_logo{
+    text-decoration: none;
+}
+.header-top_logo1{
+    font-weight: lighter;
+    font-size: 70px;
+    color: white;
+}
+
+.header-top_logo2{
+    font-weight: bold;
+    color: black;
+    font-size: 55px;
+    
+}
+
+.header-top_seperator {
+width: 100%;
+border: none;
+height: 2px;
+margin-top: 2px;
+background-color: black;
+}
+
+.header-top_navigation {
+display: flex;
+flex: 1;
+flex-direction: row;
+justify-content: flex-end;
+margin-right: 55px;
+}
+
+.header-bottom {
+display: flex;
+flex: 1;
+justify-content: flex-end;
+align-items: center;
+margin-top: 6px;
+}
+
+.header-bottom_slogan{
+    color: whitesmoke; 
+   /*  color: #00c2cb; */
+   /*  color: black; */
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}

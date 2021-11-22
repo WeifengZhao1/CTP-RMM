@@ -3,7 +3,7 @@ import '../Styles/Footer.css'
 function Footer() {
   return (
   
-      <footer>
+/*       <footer>
         <div class="container">
           <div class="row">
             <div class="col-md-4 footer-column">
@@ -116,8 +116,70 @@ function Footer() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */
+    <footer>
+
+    
+      <div className = "main-footer">
+        <div className = "container">
+          <div className = "row">
+            {/* Column 1 */}
+            <div className = "col">
+              <h4>Team Null</h4>
+              <ul className = "list-unstyled">
+                <li>
+                  <a href="https://www.linkedin.com/in/weifeng-zhao/" className="name">Weifeng Zhao</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/linxinjiang/" className="name">Linxin Jiang</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/torres-brandon/" className="name">Brandon Torres</a>
+                </li>
+              </ul>
+            </div>
+            {/* Column 2 */}
+            <div className = "col">
+              <h4>About Us</h4>
+              <ul className = "list-unstyled">
+                <li>
+                  Queens College | Senior
+                </li>
+                <li>
+                  Brooklyn College | Junior
+                </li>
+                <li>
+                  College of Staten Island | Senior
+                </li>
+              </ul>
+            </div>
+            {/* Column 3 */}
+            <div className = "col">
+              <h4>Support From</h4>
+              <ul className = "list-unstyled">
+                <li>
+                  Edgardo Molina
+                </li>
+                <li>
+                  Silu
+                </li>
+                <li>
+                  CTP
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="row">
+            <p className="col-sm" className="copyRight">
+              &copy;{new Date().getFullYear()} TEAM NULL | All right reserved | Terms Of Serivce | Privacy
+            </p>
+          </div>
+
+        </div>
+      </div>
    
+    </footer>
   );
 }
 
