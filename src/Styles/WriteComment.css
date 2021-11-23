@@ -1,11 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .form-container {
-    background-color: #E6E4DD;
+    /* background-color: #E6E4DD; */
     display: flex;
     justify-content: center;
     align-items: center; 
     padding: 10px;
-
+    margin-bottom: 50px;
+    height: 1000px;
+    background-image: url(../img/review/review.png);
+    background-position: center;
+    background-size: cover;
 }
+
+
 
 .form-section {
     width: 500px;
@@ -17,11 +28,14 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .form-section h1 {
     text-align: center;
-    background-color:#3F3F6E;
+    /* background-color:#3F3F6E; */
+    background-color: #5ce1e6;
     color:white;
     border-radius: 10px;
     padding:5px;
@@ -38,40 +52,58 @@
 
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .school-select{
     border-color:#3F3F6E;
+    border-radius: 2pt;
+    margin-left: 25px;
 }
 
 .major-select{
     border-color:#3F3F6E;
+    border-radius: 2pt;
+    margin-left: 25px;
 }
 
 .form-label {
+    margin-left: 25px;
+    margin-top: 10px;
     width: 80%;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .input-ele{
     width: 95%;
+    height: 20%;
     padding: 10px;
     margin-bottom: 3px;
     border: none;
     border-color:#3F3F6E;
+    margin-left: 25px;
+    outline: 1px solid;
+    border-radius: 2pt;
 }
 
 
 .text-area-review {
     /* width: 400px; */
     /* resize: none; */
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 93%;
+>>>>>>> 44c005c6b0eec4d9f4528949a5863d8dbef74afc
     height: 200px;
     padding: 8px;
     border-radius: 5px;
     outline: none;
     border-color:#3F3F6E;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 2pt;
 }
 
 .field-btn {
@@ -80,7 +112,7 @@
     font-weight: 500;
     border: none;
     width: 150px;
-    background-color:#3F3F6E;
+    background-color:#5ce1e6;
     color:white;
     border-radius: 10px;
 }

@@ -1,0 +1,34 @@
+.school-card{
+   /*  background-color: #00c2cb; */
+}
+
+.result-container{
+   background-image: url(../img/result/Result.png);
+   background-position: center;
+   background-color: white;
+   height: auto;
+   background-size: cover;
+   margin-bottom: 20px;
+}
+
+.result-text{
+   font-size: 34px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.result-text-sm{
+   font-size: 20px;
+   margin-left: 2px;
+   margin-bottom: 10px;
+}
+
+.result-text-space{
+   margin-left: 10px;
+}
+
+.bg-white{
+   background-color:  white;
+   height: 50px;
+}
+
