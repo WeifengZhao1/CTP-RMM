@@ -17,7 +17,10 @@ function Container() {
   return (
 
 
-    <div>
+    <div className="result-container">
+
+      <div className="bg-white">  </div>
+
       <div class="container ml-5 my-5">
 
         {/* 
@@ -29,13 +32,13 @@ function Container() {
 
         {/* Left -- Conditions*/}
         <div class="col-sm col col-lg-4 border-right ">
-          <h3 class="font-weight-bold mb-3">Sort</h3>
+          <h3 class="font-weight-bold mb-3" className="result-text">Sort</h3>
           <Condition /> 
         </div>
 
         {/* Right  -- School result */}
         <div class="col-sm ml-5 ">
-          <h3 class="font-weight-bold mb-3">Search Result</h3>
+          <h3 class="font-weight-bold mb-3" className="result-text">Search Result</h3>
 
           <School 
             SchoolName={SchoolResult1.SchoolName} 
@@ -51,10 +54,12 @@ function Container() {
             Count={SchoolResult2.Count}
           />  
 
+
         </div>
 
       </div>
     </div>
+
 
   </div>
   );
@@ -79,25 +84,26 @@ const Condition = () => {
       
       <div>
 
+        
 
-        <div class="form-check">
+        <div class="form-check" className="result-text-sm">
        {/*    INPUT MISSING 'checked' at the end*/}
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  />
-          <label class="form-check-label" for="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
             Most Rated
           </label>
         </div>
 
-        <div class="form-check">
+        <div class="form-check" className="result-text-sm">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-          <label class="form-check-label" for="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
             Most Common
           </label>
         </div>
 
-        <div class="form-check">
+        <div class="form-check" className="result-text-sm">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-          <label class="form-check-label" for="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
             Most Recent
           </label>
         </div>

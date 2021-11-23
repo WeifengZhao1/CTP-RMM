@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../Styles/WriteComment.css";
-
+import bg from "../img/review/review.png";
 
 
 
@@ -51,18 +51,17 @@ function WriteComment() {
 
   return (
     <div className="form-container">
+    
+  
       <form method="POST" className="form-section">
         <h1> Write A Comment </h1>
           {err && err}
           <div className="form-inputs">
-
-            {/* Name */}
-            <div className="field">  
+            <div className="field">
             <label className='form-label'>Name</label> 
-              <input onInput = {(e) => setName(e.target.value)} type="text" className="input-ele" name="name"/>
+              <input onInput = {(e) => setName(e.target.value)} type="text" className="input-ele" name="name" placeholder="Name"/>
             </div>
             
-            {/* School */}
             <div className="field">
               <label className='form-label'>School</label> 
               {/* <input onInput = {(e) => setSchool(e.target.value)} type="text" className="input-ele" name="school" placeholder="school"/> */}
@@ -74,9 +73,8 @@ function WriteComment() {
               </select>
             </div>
             
-            {/* Major */}
             <div className="field">
-              <label className='form-label'>Major</label>
+              <label className='form-label'>Major </label>
               <select className="major-select" onChange={(e) => setMajor(e.target.value)}>
                 <option>--Select Major--</option>
                 <option value="nursing">Nursing</option>
@@ -86,20 +84,18 @@ function WriteComment() {
               {/* <input onInput = {(e) => setMajor(e.target.value)} type="text" className="input-ele" name="major" placeholder="major"/> */}
             </div>
             
-            {/* Review */}
             <div className="field">
               <textarea onInput = {(e) => setReview(e.target.value)} rows="3" cols="5" className="text-area-review" maxLength="250" placeholder="Write your feedback" />
             </div>
 
-
-            {/* Submit */}
             <div>
               <button type="submit" onClick={handleClick} className="field-btn" >Submit</button>  
             </div>
-
           </div>
       </form> 
         
+
+         
     </div>
   );
 }
