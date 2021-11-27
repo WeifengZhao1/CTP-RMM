@@ -28,6 +28,47 @@ p {
     font-size: 75px;
 }
 
+
+.dataItem p {
+    margin-left: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: lightgrey;
+  }
+  
+  #clearBtn {
+    cursor: pointer;
+  }
+  
+
 .comment-img{
     margin-top: 30px;
+}
+
+.searchInputs{
+    text-align: center;
+    font-size: 61px;
+}
+
+.dataResult{
+    margin-top: 5px;
+    margin-left: 600px;
+    margin-right: 600px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.dataResult::-webkit-scrollbar {
+    display: none;
+  }
+
+.review-btn{
+    margin-left: 800px;
 }
