@@ -1,5 +1,5 @@
 .link{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ p {
   }
   
   a:hover {
-    background-color: lightgrey;
+   
   }
   
   #clearBtn {
@@ -49,9 +49,42 @@ p {
     margin-top: 30px;
 }
 
-.searchInputs{
-    text-align: center;
-    font-size: 61px;
+
+
+
+.searchInputs-box{
+    margin: 0 auto;
+    position: relative;
+    width: 40%;
+    padding: 13px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.searchInputs-input{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    margin-left: 15px;
+
+}
+
+
+.searchIcon{
+    position: absolute;
+    top: 0%;
+    width: 80px;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    margin-top: 85px;
 }
 
 .dataResult{
@@ -69,6 +102,8 @@ p {
     display: none;
   }
 
-.review-btn{
-    margin-left: 800px;
+.review-section{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

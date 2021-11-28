@@ -8,7 +8,7 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <SearchBar placeholder="Enter a Major..." data={Data} />
+                <SearchBar placeholder="Enter a Major" data={Data} />
 
                 {/* IMG is between 'Weite a Review' and 'Footer' */}
                 <MainImg />

@@ -5,6 +5,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import { keys } from '@material-ui/core/styles/createBreakpoints';
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { Route, Router, Link } from 'react-router-dom';
+import searchIcon from "../img/mainpageimg/icons8-search-50.png";
+import commentImage from "../img/mainpageimg/commentImage.png";
+
+
 
 function SearchBar({ placeholder, data }) {
 
@@ -25,12 +29,14 @@ function SearchBar({ placeholder, data }) {
     return (
         <div className="search">
 
-            <div className="searchInputs">
-                <input type="text" placeholder={placeholder} onChange={handleFilter} />
-                <div className="searchIcon">
-                    {/* <SearchIcon /> */}
-                </div>
+            <div className="searchInputs-box">      
+                <input type="text" className="searchInputs-input" placeholder={placeholder} onChange={handleFilter} />
+                {/* <SearchIcon /> */}
+                <img src={ searchIcon } alt="MainImage" className="searchIcon"/>      
             </div>
+                        
+
+            
 
             {filteredData != 0 && (
                 <div className="dataResult">
@@ -42,10 +48,15 @@ function SearchBar({ placeholder, data }) {
                 </div>
             )}
 
-            <p><span class="word-span">Create</span> The First Comment Now !</p>
-            <Button WriteReview="outline-success" className="review-btn">
-                <Link to='WriteComment' className="link">Write A Review</Link>
-            </Button>
+            
+            <img src={ commentImage } alt="commentImage" className="img-fluid mt-5"/>
+
+            <div className="review-section">
+                <p><span class="word-span">Create</span> The First Comment Now !</p>
+                <button type="button" class="btn btn-light">
+                    <Link to='WriteComment' className="link">Write A Review</Link>
+                </button>
+            </div>
         </div>
     )
 }
