@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../Styles/Results.css';
+import axios from 'axios';
 
 
 /* Container */
@@ -13,9 +14,33 @@ import '../Styles/Results.css';
               - Numbers of people reviews
     */
 
-function Container() {
-  return (
 
+
+const baseURL='http://localhost:5000'
+
+function Container() {
+    const [reviews,setreviews]=useState([]);
+
+  //getting reviews from the database and reviews table using the route "getreview" from the server.js, 
+  // the route accepts no parameters and only selects all the reviews in the table in the order they were added
+  const getReviews =()=>{
+       axios.get(`${baseURL}/getreviews`)
+      .then(response =>{
+        console.log(response.data);
+        setreviews(response.data.data);
+      })
+      .catch(err=>{
+        console.log(err);
+      })
+  }
+
+  useEffect(() => {
+    getReviews()
+  }, [])
+
+
+
+  return (
 
     <div className="result-container">
 
@@ -39,21 +64,33 @@ function Container() {
         {/* Right  -- School result */}
         <div class="col-sm ml-5 ">
           <h3 class="font-weight-bold mb-3" className="result-text">Search Result</h3>
-
+{/* 
           <School 
             SchoolName={SchoolResult1.SchoolName} 
             Rate={SchoolResult1.Rate} 
             Review={SchoolResult1.Review} 
             Count={SchoolResult1.Count}
-          />   
+          />    */}
 
-          <School 
+          {/* <School 
             SchoolName={SchoolResult2.SchoolName} 
             Rate={SchoolResult2.Rate} 
             Review={SchoolResult2.Review} 
             Count={SchoolResult2.Count}
-          />  
+          />   */}
 
+
+            {/*printing out reviews     */}
+            {reviews.map((review,index)=>(
+              <School 
+              key={index}
+              SchoolName={review.school} 
+              Rate={""} 
+              Review={review.feedback} 
+              Count={""}
+              name={review.name}
+              major={review.major}/>
+            )).reverse()}
 
         </div>
 
@@ -142,13 +179,15 @@ const SchoolResult2 = {
 
 
 
-const School = ({ SchoolName, Rate, Review, Count }) => {
+const School = ({ SchoolName, Rate, Review, Count,name,major }) => {
   return (
     /* School Result */
     <div class="card mb-3">
       <div class="card-body" >
           <div class="mx-3">
-            <h5>{SchoolName}</h5>
+            <h3>{SchoolName}</h3>
+            <h5>{name}</h5>
+            <p>{major}</p>
             <div class="mt-1"><strong>{Rate}</strong></div>
           </div>
           <ul class="list-group list-group-flush mt-2">

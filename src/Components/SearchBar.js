@@ -20,7 +20,7 @@ export default class SearchBar extends Component {
                         </Container>
                     </Navbar>
                 </Container>
-                <Button Major="outline-success" className="search-btn">Search</Button>
+                <Button Major="outline-success" className="search-btn"><Link to='Results'className="link">Search</Link></Button>
                 
                 <div className="comment-img">
                     <img src={ commentImage } alt="commentImage" className="img-fluid"/>
