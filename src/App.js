@@ -14,12 +14,13 @@ import Contact from './Components/Contact';
 import About from './Components/About';
 import Footer from "./Components/Footer";
 import Results from "./Pages/Results";
+import Data from "./Data.json";
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <NavbarComp />
+      <NavbarComp/>
       <div>
         <Switch>
           <Route path="/about" component={About}/>
