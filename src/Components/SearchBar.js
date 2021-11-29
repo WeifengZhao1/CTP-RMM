@@ -35,8 +35,6 @@ function SearchBar({ placeholder, data }) {
             </div>
                         
 
-            
-
             {filteredData != 0 && (
                 <div className="dataResult">
                     {filteredData.slice(0, 7).map((value, key) => {
@@ -51,7 +49,7 @@ function SearchBar({ placeholder, data }) {
             <img src={ commentImage } alt="commentImage" className="img-fluid mt-5"/>
 
             <div className="review-section">
-                <p><span class="word-span">Create</span> The First Comment Now !</p>
+                <p>Create The First Comment Now!</p>
                 <button type="button" class="btn btn-light">
                     <Link to='WriteComment' className="link">Write A Review</Link>
                 </button>

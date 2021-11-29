@@ -26,9 +26,6 @@ connection.connect((err)=>{
 })
 
 
-
-
-
 //starting point for all get and posts
 var corsOptions = {
     origin:'http://localhost:5000'
