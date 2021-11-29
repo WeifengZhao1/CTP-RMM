@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import '../Styles/SearchBar.css';
 // import SearchIcon from '@mui/icons-material/Search';
-import SearchIcon from "@material-ui/icons/Search";
-import { keys } from '@material-ui/core/styles/createBreakpoints';
+import SearchIcon from "@mui/icons-material/Search";
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { Route, Router, Link } from 'react-router-dom';
 import searchIcon from "../img/mainpageimg/icons8-search-50.png";
