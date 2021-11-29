@@ -35,6 +35,8 @@ function SearchBar({ placeholder, data }) {
             </div>
                         
 
+            
+
             {filteredData != 0 && (
                 <div className="dataResult">
                     {filteredData.slice(0, 7).map((value, key) => {
