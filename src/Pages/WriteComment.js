@@ -94,7 +94,7 @@ function WriteComment() {
               <select className="major-select" value={major} onChange={(e) => setMajor(e.target.value)}>
                 <option>--Select Major--</option>
                 <option value="nursing">Nursing</option>
-                <option value="comp-science">Computer Science</option>
+                <option value="computer science">Computer Science</option>
                 <option value="">Other</option>
               </select>
               {/* <input onInput = {(e) => setMajor(e.target.value)} type="text" className="input-ele" name="major" placeholder="major"/> */}

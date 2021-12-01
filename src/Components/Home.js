@@ -11,6 +11,7 @@ export default class Home extends Component {
                 <SearchBar placeholder="Enter a Major" data={Data} />
 
                 {/* IMG is between 'Weite a Review' and 'Footer' */}
+                {/* steps: - create a function - route to results.js, while also passing the selected a major as a prop */}
                 <MainImg />
             </div>
         )

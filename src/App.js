@@ -7,7 +7,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useParams
 } from "react-router-dom";
 import Home from './Components/Home';
 import Contact from './Components/Contact';
@@ -15,25 +16,35 @@ import About from './Components/About';
 import Footer from "./Components/Footer";
 import Results from "./Pages/Results";
 import Data from "./Data.json";
+import AllReviews from "./Components/AllReviews";
+
+
 
 function App() {
+
   return (
     <div className="App">
       <Router>
       <NavbarComp/>
       <div>
         <Switch>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/WriteComment" component={WriteComment}/>
-          <Route path="/Results" component={Results}/>
-          <Route path="/" component={Home}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/writeComment" component={WriteComment}/>
+          <Route exact path="/results/:major" component={Results}/>
+          <Route exact path="/results" component={AllReviews} />
+          <Route exact path="/" component={Home}/>
+          <Route path= "*" component = {() => {
+            return "<h4>404 Page Not Found!</h4>"
+          }} />
         </Switch>
       </div>
       <Footer/>
       </Router>
     </div>
   );
+
+
 }
 
 export default App;

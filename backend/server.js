@@ -16,7 +16,6 @@ const connection = mysql.createConnection({
 })
 
 
-
 //create a connection
 connection.connect((err)=>{
     if(err)
@@ -42,7 +41,6 @@ app.use(function(req, res, next) {
     next();
   })
   
-
 
 //ROUTES
 // show all columns from table reviews
@@ -100,6 +98,26 @@ app.get('/add/:name/:school/:major/:feedback',(req,res)=>{
             return res.json({
                 data:results
             });
+    })
+})
+
+//display all reviews with passed in major only 
+app.get('/getbymajor/:major',(req,res)=>{
+    const major = req.params.major;
+    const SELECT = `SELECT * FROM reviews where major = '${major}'`;
+
+    connection.query(SELECT,(err,results)=>{
+        if(err){
+            res.send(err);
+            return console.log(err);
+        }
+        else{
+            return res.json({
+                data:results,
+                message:` ${major} successfully displayed`
+
+            })
+        }
     })
 })
 
