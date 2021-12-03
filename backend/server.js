@@ -31,7 +31,6 @@ var corsOptions = {
 
 }
 
-
 //set starting point for http requests
 app.use(cors(corsOptions))
 
@@ -104,7 +103,7 @@ app.get('/add/:name/:school/:major/:feedback',(req,res)=>{
 //display all reviews with passed in major only 
 app.get('/getbymajor/:major',(req,res)=>{
     const major = req.params.major;
-    const SELECT = `SELECT * FROM reviews where major = '${major}'`;
+    const SELECT = `SELECT * FROM reviews where major ILIKE '%${major}%'`;
 
     connection.query(SELECT,(err,results)=>{
         if(err){

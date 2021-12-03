@@ -53,20 +53,16 @@ function Container() {
     <div className="result-container">
       <div className="bg-white"> </div>
 
-      <div class="container ml-5 my-5">
-        {/* 
-          Row:
-            Left: conditions
-            Right: School
-        */}
+      {/* <div class="container ml-5 my-5">
+        {}
         <div class="row">
-          {/* Left -- Conditions*/}
+          {}
           <div class="col-sm col col-lg-4 border-right ">
             <h3 class="font-weight-bold mb-3" className="result-text">
               Sort
-            </h3>
+            </h3> 
             <Condition />
-          </div>
+          </div> */}
 
           {/* Right  -- School result */}
           <div class="col-sm ml-5 ">
@@ -91,8 +87,8 @@ function Container() {
 
           </div>
         </div>
-      </div>
-    </div>
+    //   </div>
+    // </div>
   );
 }
 
@@ -106,37 +102,38 @@ function Container() {
 
 const Condition = () => {
   return (
-  
+      <>
+      </>
         //  Sort section:
         //     - Most Rated
         //     - Most Common
         //     - Most Recent 
       
-      <div>
+      // <div>
       
-        <div class="form-check" className="result-text-sm">
-       {/*    INPUT MISSING 'checked' at the end*/}
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  />
-          <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
-            Most Rated
-          </label>
-        </div>
+      //   <div class="form-check" className="result-text-sm">
+      //  {/*    INPUT MISSING 'checked' at the end*/}
+      //     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  />
+      //     <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
+      //       Most Rated
+      //     </label>
+      //   </div>
 
-        <div class="form-check" className="result-text-sm">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-          <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
-            Most Common
-          </label>
-        </div>
+      //   <div class="form-check" className="result-text-sm">
+      //     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+      //     <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
+      //       Most Common
+      //     </label>
+      //   </div>
 
-        <div class="form-check" className="result-text-sm">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-          <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
-            Most Recent
-          </label>
-        </div>
+      //   <div class="form-check" className="result-text-sm">
+      //     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+      //     <label class="form-check-label" for="flexRadioDefault2" className="result-text-space">
+      //       Most Recent
+      //     </label>
+      //   </div>
 
-      </div>
+      // </div>
 
   )
 };

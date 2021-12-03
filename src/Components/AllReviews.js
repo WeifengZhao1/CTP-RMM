@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import School from "../Components/School";
 import { Condition } from '../Pages/Results';
-
+import "../Styles/Results.css";
 const baseURL = "http://localhost:5000";
 
 
@@ -29,18 +29,18 @@ function AllReviews() {
       <div className="result-container">
         <div className="bg-white"> </div>
 
-        <div class="container ml-5 my-5">
+        <div class="container m-0">
           <div class="row">
-            {/* Left -- Conditions*/}
+            {}
             <div class="col-sm col col-lg-4 border-right ">
               <h3 class="font-weight-bold mb-3" className="result-text">
-                Sort
+               
               </h3>
               <Condition />
             </div>
 
             <div class="col-sm ml-5">
-              <h3 class="font-weight-bold mb-3" className="result-text">
+              <h3 class="font-weight-bold mb-3 m-0" className="result-text">
                 Search Result
               </h3>
 
