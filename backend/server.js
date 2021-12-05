@@ -103,7 +103,7 @@ app.get('/add/:name/:school/:major/:feedback',(req,res)=>{
 //display all reviews with passed in major only 
 app.get('/getbymajor/:major',(req,res)=>{
     const major = req.params.major;
-    const SELECT = `SELECT * FROM reviews where major ILIKE '%${major}%'`;
+    const SELECT = `SELECT * FROM reviews where major LIKE '%${major}%'`;
 
     connection.query(SELECT,(err,results)=>{
         if(err){
