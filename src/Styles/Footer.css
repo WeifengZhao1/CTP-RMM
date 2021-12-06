@@ -7,6 +7,10 @@ footer {
     width: 100%;
 } 
 
+.container{
+    padding-left: 200px;
+}
+
 .name {
     text-decoration: none;
     color: white;
@@ -15,6 +19,7 @@ footer {
 .copyRight{
     font-size: 15px;
     font-weight: lighter;
+    padding-left: 240px;
 }
 
 

@@ -65,7 +65,8 @@ function Container() {
           </div> */}
 
           {/* Right  -- School result */}
-          <div class="col-sm ml-5 ">
+          <div class="col-sm ml-5">
+            {/* <h3 class="font-weight-bold mb-3" className="result-text"> */}
             <h3 class="font-weight-bold mb-3" className="result-text">
               Search Result
             </h3>
@@ -86,6 +87,7 @@ function Container() {
               .reverse()}
 
           </div>
+          
         </div>
     //   </div>
     // </div>
