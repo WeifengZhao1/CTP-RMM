@@ -143,13 +143,14 @@ function Footer() {
               <h4>About Us</h4>
               <ul className = "list-unstyled">
                 <li>
-                  Queens College | Senior
+                <a href="https://www.qc.cuny.edu/Pages/home.aspx" className="name">Queens College | Senior</a>
+                </li>
+          
+                <li>
+                <a href="http://www.brooklyn.cuny.edu/web/home.php" className="name">Brooklyn College | Junior</a>
                 </li>
                 <li>
-                  Brooklyn College | Junior
-                </li>
-                <li>
-                  College of Staten Island | Senior
+                <a href="https://www.csi.cuny.edu/" className="name"> College of Staten Island | Senior</a>
                 </li>
               </ul>
             </div>
@@ -158,13 +159,13 @@ function Footer() {
               <h4>Support From</h4>
               <ul className = "list-unstyled">
                 <li>
-                  Edgardo Molina
+                <a href="https://cunytechprep.nyc/" className="name"> CUNY Tech Prep</a>
                 </li>
                 <li>
-                  Silu
+                <a href="https://cunytechprep.nyc/staff.html" className="name">  Edgardo Molina</a>
                 </li>
                 <li>
-                  CTP
+                <a href="https://cunytechprep.nyc/staff.html" className="name">  Silu Hu</a>
                 </li>
               </ul>
             </div>
