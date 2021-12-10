@@ -58,7 +58,7 @@ export default class NavbarComp extends Component {
               </div> */}
 
               <hr className="header-top_seperator" />
-
+                
               <div className="header-bottom">
                 {/*  Team Null */}
                 <div className="header-bottom_slogan">Connect your passions to your career</div>

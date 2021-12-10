@@ -40,7 +40,7 @@ function Container() {
         console.log(err)
       })
     }
-
+      
 
     useEffect(() => {
       console.log(major);
@@ -53,20 +53,20 @@ function Container() {
     <div className="result-container">
       <div className="bg-white"> </div>
 
-      {/* <div class="container ml-5 my-5">
+       <div class="container m-0">
         {}
         <div class="row">
           {}
           <div class="col-sm col col-lg-4 border-right ">
             <h3 class="font-weight-bold mb-3" className="result-text">
-              Sort
+          
             </h3> 
             <Condition />
-          </div> */}
-
+          </div> 
+          
           {/* Right  -- School result */}
           <div class="col-sm ml-5 ">
-            <h3 class="font-weight-bold mb-3" className="result-text">
+            <h3 class="font-weight-bold mb-3 m-0" className="result-text">
               Search Result
             </h3>
 

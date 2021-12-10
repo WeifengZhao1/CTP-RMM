@@ -38,17 +38,15 @@ function SearchBar({ placeholder, data }) {
           
     return (
         <div className="search">
-
             <div className="searchInputs-box">      
                 <input type="text" className="searchInputs-input" value = {val} onInput={(e) => setVal(e.target.value)}  placeholder={placeholder} onKeyDown = {handleRouting} onChange = {handleFilter}/>
                 {/* <SearchIcon /> */}
                 
                 <img src={ searchIcon } alt="MainImage" className="searchIcon"/>      
             </div>
-
-                    
+       
             {filteredData != 0 && (
-                <div className="dataResult">
+                <div className=" dataResult">
                     {filteredData.slice(0, 7).map((value, key) => {
                         return <a className="dataItem" href={value.link} rel="noreferrer">
                             <p>{value.major} </p>
@@ -57,8 +55,7 @@ function SearchBar({ placeholder, data }) {
                 </div>
             )}
 
-            
-            <img src={ commentImage } alt="commentImage" className="img-fluid mt-5"/>
+            <img src={ commentImage } alt="commentImage" className="img-fluid"/>
 
             <div className="review-section">
                 <p>Create The First Comment Now!</p>

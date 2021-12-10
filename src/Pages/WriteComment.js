@@ -48,8 +48,9 @@ function WriteComment() {
     else {
       return;
     }
-  
+    
   }
+  
 //add a review
   const addReview = () =>{
     const URL = `${baseURL}/add/${name}/${school}/${major}/${review}`;
