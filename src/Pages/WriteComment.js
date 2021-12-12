@@ -85,7 +85,6 @@ function WriteComment() {
                 <option>--Select School--</option>
                 <option value="college-of-staten-island">College of Staten Island</option>
                 <option value="queens-college">Queens College</option>
-                <option value="other">Other</option>
               </select>
             </div>
             
@@ -96,7 +95,6 @@ function WriteComment() {
                 <option>--Select Major--</option>
                 <option value="nursing">Nursing</option>
                 <option value="comp-science">Computer Science</option>
-                <option value="">Other</option>
               </select>
               {/* <input onInput = {(e) => setMajor(e.target.value)} type="text" className="input-ele" name="major" placeholder="major"/> */}
             </div>
