@@ -7,7 +7,7 @@ import Data from "../Data.json";
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="home-main-container">
                 <SearchBar placeholder="Enter a Major" data={Data} />
 
                 {/* IMG is between 'Weite a Review' and 'Footer' */}

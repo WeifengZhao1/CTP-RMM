@@ -19,14 +19,12 @@ import Data from "./Data.json";
 import AllReviews from "./Components/AllReviews";
 
 
-
 function App() {
 
   return (
     <div className="App">
       <Router>
       <NavbarComp/>
-      <div>
         <Switch>
           <Route exact path="/about" component={About}/>
           <Route exact path="/contact" component={Contact}/>
@@ -38,8 +36,7 @@ function App() {
             return "<h4>404 Page Not Found!</h4>"
           }} />
         </Switch>
-      </div>
-      <Footer/>
+      <Footer/> 
       </Router>
     </div>
   );

@@ -124,7 +124,7 @@ function Footer() {
         <div className = "container">
           <div className = "row">
             {/* Column 1 */}
-            <div className = "col">
+            <div className = "col-sm text-center">
               <h4>Team Null</h4>
               <ul className = "list-unstyled">
                 <li>
@@ -139,7 +139,7 @@ function Footer() {
               </ul>
             </div>
             {/* Column 2 */}
-            <div className = "col">
+            <div className = "col-sm text-center">
               <h4>About Us</h4>
               <ul className = "list-unstyled">
                 <li>
@@ -155,7 +155,7 @@ function Footer() {
               </ul>
             </div>
             {/* Column 3 */}
-            <div className = "col">
+            <div className = "col-sm text-center">
               <h4>Support From</h4>
               <ul className = "list-unstyled">
                 <li>
@@ -172,7 +172,7 @@ function Footer() {
           </div>
 
           <div className="row">
-            <p className="col-sm" className="copyRight">
+            <p className="col-sm" className="copyRight" >
               &copy;{new Date().getFullYear()} TEAM NULL | All right reserved | Terms Of Serivce | Privacy
             </p>
           </div>

@@ -4,7 +4,9 @@
 }
 
 .search{
-    margin: 150px auto;
+    /* margin: 150px auto; */
+   
+
 }
 
 .review-btn{
@@ -70,7 +72,7 @@ p {
     width: 100%;
     padding: 13px;
     padding-left: 45px;
-    padding-right: 60px;
+    /* padding-right: 60px; */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     
@@ -99,6 +101,9 @@ p {
     margin:0 auto;
     width:40%;
     padding: 8px 36px;
+    position:absolute;
+    z-index: 1;
+    left:30%;
     /* margin-top: 5px; */
     /* margin-left: 600px;
     margin-right: 600px; */
