@@ -18,7 +18,6 @@ import School from "../Components/School";import { useParams } from "react-route
 
 const baseURL='http://localhost:5000'
 
-
 function Container() {
     const [majorReviews, setMajorReviews] = useState([]);
     const [majorValue, setMajorValue] = useState("");

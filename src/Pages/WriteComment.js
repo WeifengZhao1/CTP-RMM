@@ -3,29 +3,28 @@ import "../Styles/WriteComment.css";
 import axios from 'axios';
 
 
-const baseURL='http://localhost:5000';
+const baseURL='http://localhost:5000/';
 
 function WriteComment() {
   //setters and getters
   const [name, setName] = useState("");
   const [school, setSchool] = useState("");
   const [major, setMajor] = useState("");
-  const [review, setReview] = useState("");
+  const [feedback, setFeedback] = useState("");
   const [err, setErr] = useState("");
   const [success,setSuccess]=useState(false);
+  const [data,dataCollected]=useState([]);
 
   // this function handleClick will keep the user on the comment page if below functions are not true
   const handleClick = (ev) => {
     ev.preventDefault();
     formValidation();
    
-    
-
   }
-
+ 
   //check if the form is has all correct options filled out
   const formValidation = () => {
-    if(name === "" || school === "" || major === "" || review === "" || name.length < 1){
+    if(name === "" || school === "" || major === "" || feedback === "" || name.length < 1){
       setErr("Field can not be empty!");
       setSuccess(false);
       return;
@@ -42,7 +41,7 @@ function WriteComment() {
       setName("");
       setMajor("");
       setSchool("");
-      setReview("");
+      setFeedback("");
     }
 
     else {
@@ -51,10 +50,15 @@ function WriteComment() {
     
   }
   
-//add a review
+//add a review using post axios
   const addReview = () =>{
-    const URL = `${baseURL}/add/${name}/${school}/${major}/${review}`;
-    axios.get(URL)
+    const URL = `${baseURL}addreview`;
+    axios.post(URL,{
+      name:name,
+      school: school,
+      major: major,
+      feedback: feedback
+    })
     .then(response=>{
       console.log(response.data);
     })
@@ -101,7 +105,7 @@ function WriteComment() {
             
             {/* Review */}
             <div className="field">
-              <textarea onInput = {(e) => setReview(e.target.value)} rows="3" cols="5" value ={review} className="text-area-review" maxLength="250" placeholder="Write your feedback" />
+              <textarea onInput = {(e) => setFeedback(e.target.value)} rows="3" cols="5" value ={feedback} className="text-area-review" maxLength="250" placeholder="Write your feedback" />
             </div>
 
 
