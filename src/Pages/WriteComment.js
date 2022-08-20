@@ -99,6 +99,11 @@ function WriteComment() {
                 <option>--Select Major--</option>
                 <option value="nursing">Nursing</option>
                 <option value="comp-science">Computer Science</option>
+                <option value="history">History</option>
+                <option value="biology">Biology</option>
+                <option value="english">English</option>
+                <option value="accounting">Accounting</option>
+
               </select>
               {/* <input onInput = {(e) => setMajor(e.target.value)} type="text" className="input-ele" name="major" placeholder="major"/> */}
             </div>

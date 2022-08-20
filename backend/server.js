@@ -124,10 +124,10 @@ app.post('/addreview',(req,res) => {
 //     })
 // })
 
-//display all reviews with passed in major only 
+//display one specific major whose values matches similar to entered search value
 app.get('/getbymajor/:major',(req,res)=>{
 
-    const major = req.params.major;
+    const major = `%${req.params.major}%`;
     const SELECT = `SELECT * FROM reviews where major LIKE ?`;
 
     connection.query(SELECT,[major],(err,results)=>{

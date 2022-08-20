@@ -7,6 +7,22 @@
     {
       "link": "http://localhost:3000/results/nursing",
       "major": "Nursing"
+    },
+    {
+      "link": "http://localhost:3000/results/history",
+      "major": "History"
+    },
+    {
+      "link": "http://localhost:3000/results/biology",
+      "major": "Biology"
+    },
+    {
+      "link": "http://localhost:3000/results/english",
+      "major": "English"
+    },
+    {
+      "link": "http://localhost:3000/results/accounting",
+      "major": "Accounting"
     }
   ]
   

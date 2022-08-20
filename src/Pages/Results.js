@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../Styles/Results.css';
 import axios from 'axios';
-import School from "../Components/School";import { useParams } from "react-router";
+import School from "../Components/School";
+import { useParams } from "react-router";
 
 /* Container */
 
@@ -25,7 +26,7 @@ function Container() {
     // the route accepts no parameters and only selects all the reviews in the table in the order they were added
 
  
-    const { major }  = useParams(); //used to get the major from the url params
+    const { major }  = useParams(); //used to get the major from the url params(value user type in searchbar)
 
     // get reviews by passed in majors
     const getByMajor = () => {
@@ -87,8 +88,8 @@ function Container() {
           </div>
           
         </div>
-    //   </div>
-    // </div>
+      </div>
+    </div>
   );
 }
 
