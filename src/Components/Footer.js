@@ -120,9 +120,9 @@ function Footer() {
     <footer>
 
     
-      <div className = "main-footer">
-        <div className = "container">
-          <div className = "row">
+      <div className="main-footer">
+        <div className="container">
+          <div className="row">
             {/* Column 1 */}
             <div className = "col-sm text-center">
               <h4>Team Null</h4>
@@ -171,14 +171,12 @@ function Footer() {
             </div>
           </div>
 
-          <div className="row">
-            <p className="col-sm" className="copyRight" >
-              &copy;{new Date().getFullYear()} TEAM NULL | All right reserved | Terms Of Serivce | Privacy
-            </p>
+          {/* <div className="row"> */}
+          <div className = "col text-center">
+              &copy;{new Date().getFullYear()} TEAM NULL | All right reserved | Terms Of Service | Privacy
           </div>
-
         </div>
-      </div>
+       </div> 
    
     </footer>
   );

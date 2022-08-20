@@ -1,25 +1,20 @@
 footer {
     color: whitesmoke;
-    background-color: #00c2cb;
-    padding-top: 3 em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-} 
-
+}  
+/* 
 .container{
-    /* padding-left: 200px; */
-}
+     padding-left: 200px; 
+} */
 
 .name {
     text-decoration: none;
     color: white;
 }
-
+/*
 .copyRight{
     font-size: 15px;
     font-weight: lighter;
     text-align: center;
-}
+} */
 
 
